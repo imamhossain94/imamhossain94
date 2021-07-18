@@ -10,5 +10,5 @@
 
 ## Top Languages
   
-  ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=imamhossain94&layout=compact&hide=html" alt="imamhossain94)
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=imamhossain94&layout=compact&hide=html" alt="imamhossain94" /></p>
   
