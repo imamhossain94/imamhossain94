@@ -8,25 +8,6 @@
 
 ## My GitHub Stats
 
-
-<html>
-<body>
-<table width="100%">
-  <tr>
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=imamhossain94&show_icons=true&theme=radical)
   
-  <td width="50%">
-  
-  </td>
-  
-  <td width="50%">
-  ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=imamhossain94&show_icons=true&theme=radical)
-  </td>
-  
-  
-
-
-
-</table>
-</body>
-</html>
 
