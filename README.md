@@ -14,3 +14,5 @@
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=imamhossain94&repo=bubt-website-scraping-script&theme=radical)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=imamhossain94&repo=study-lab&theme=radical)
 
+**Note:** This chart is only a metric of which languages my public code on GitHub consists of and does not reflect my
+experience or skill level.
