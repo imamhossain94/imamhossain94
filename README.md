@@ -2,14 +2,14 @@
 
 <img src="https://github.com/imamhossain94/imamhossain94/blob/main/assets/profile_card_dark.png" alt="Md. Imam Hossain" width="100%">
 
-- 🔭 I am currently working as a Front End Engineer.
+- 🔭 I am currently working as a Front End Developer.
 - 🌱 Currently learning : Node JS, Python.
 - 💬 Ask me about: Kotlin, Xml, Flutter.
 
 ## My GitHub Stats
 
 ![Imam's github stats](https://github-readme-stats.vercel.app/api?username=imamhossain94&count_private=true&show_icons=true&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=imamhossain94&langs_count=2&theme=radical)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=imamhossain94&langs_count=3&theme=radical)
 
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=imamhossain94&repo=bubt-website-scraping-script&theme=radical)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=imamhossain94&repo=study-lab&theme=radical)
