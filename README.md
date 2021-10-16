@@ -10,5 +10,7 @@
 
 ![Imam's github stats](https://github-readme-stats.vercel.app/api?username=imamhossain94&count_private=true&show_icons=true&theme=radical)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=imamhossain94&langs_count=2&theme=radical)
-  
+
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=imamhossain94&repo=bubt-website-scraping-script&theme=radical)
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=imamhossain94&repo=study-lab&theme=radical)
 
