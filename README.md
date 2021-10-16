@@ -34,8 +34,8 @@
 ![Imam's github stats](https://github-readme-stats.vercel.app/api?username=imamhossain94&count_private=true&show_icons=true&theme=radical)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=imamhossain94&langs_count=3&theme=radical)
 
-![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=imamhossain94&repo=study-lab&theme=radical)
-![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=imamhossain94&repo=bubt-website-scraping-script&theme=radical)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=imamhossain94&repo=study-lab&theme=radical)](https://github.com/imamhossain94/study-lab)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=imamhossain94&repo=bubt-website-scraping-script&theme=radical)](https://github.com/imamhossain94/bubt-website-scraping-script)
 
 **Note:** This chart is only a metric of which languages my public code on GitHub consists of and does not reflect my
 experience or skill level.
