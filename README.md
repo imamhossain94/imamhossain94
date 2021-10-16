@@ -1,7 +1,9 @@
 # Hi there. I am Md. Imam Hossain 👋 . Welcome to my Profile!!!   ![Visitor](https://visitor-badge.laobi.icu/badge?page_id=imamhossain94.repoName)
 
+::if ctx.theme == "dark"
  <img src="https://github.com/imamhossain94/imamhossain94/blob/main/assets/profile_card.png" alt="Md. Imam Hossain" width="100%">
-
+::else
+ <img src="https://github.com/imamhossain94/imamhossain94/blob/main/assets/profile_card_dark.png" alt="Md. Imam Hossain" width="100%">
 
 - 🔭 I am currently working as a Front End Engineer.
 - 🌱 Currently learning : Node JS, Python.
