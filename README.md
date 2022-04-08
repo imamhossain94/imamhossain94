@@ -1,4 +1,4 @@
-# Hi there. I am Md. Imam Hossain 👋 . Welcome to my Profile!!!   ![Visitor](https://visitor-badge.laobi.icu/badge?page_id=imamhossain94.repoName)
+# Hi there. I am Masrafi Anam 👋 . Welcome to my Profile!!!   ![Visitor](https://visitor-badge.laobi.icu/badge?page_id=imamhossain94.repoName)
 
 - 🔭 I am currently working as a Front End Developer.
 - 🌱 Currently learning : Swift, React Js.
@@ -39,7 +39,7 @@
 
 ## My GitHub Stats
 
-![Imam's github stats](https://github-readme-stats.vercel.app/api?username=imamhossain94&count_private=true&show_icons=true&theme=dark)
+![Masrafi's github stats](https://github-readme-stats.vercel.app/api?username=imamhossain94&count_private=true&show_icons=true&theme=dark)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=imamhossain94&langs_count=3&theme=dark)
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=imamhossain94&repo=study-lab&theme=dark)](https://github.com/imamhossain94/study-lab)
