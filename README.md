@@ -2,7 +2,7 @@
 
 - 🔭 I am currently working as a Front End Developer.
 - 🌱 Currently learning : Swift, React Js.
-- 💬 Ask me about: Kotlin, Xml, Flutter.
+- 💬 Ask me about: Kotlin, Flutter.
 
 ## My Tech Stack
 ![image](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
