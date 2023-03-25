@@ -1,12 +1,14 @@
-# Hi there. I am Md. Imam Hossain 👋 . Welcome to my Profile!!!   ![Visitor](https://visitor-badge.laobi.icu/badge?page_id=imamhossain94.repoName)
+# Hi there. I am Md. Imam Hossain 👋 . Welcome to my Profile!!!   ![Visitor](https://visitor-badge.laobi.icu/badge?page_id=imamhossain94)
 
-- 🔭 I am currently working as a Front End Developer.
-- 🌱 Currently learning : Swift, React Js.
+- 🔭 I am currently working as a Mobile Application Developer.
+- 🌱 Currently learning : Android Jetpack Compose.
 - 💬 Ask me about: Kotlin, Flutter.
 
 ## My Tech Stack
 ![image](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![image](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![image](https://img.shields.io/badge/Django-092c1e?style=for-the-badge&logo=django&logoColor=white)
+![image](https://img.shields.io/badge/Kotlin-0095D5?&style=for-the-badge&logo=kotlin&logoColor=white)
 ![image](https://img.shields.io/badge/Kotlin-0095D5?&style=for-the-badge&logo=kotlin&logoColor=white)
 ![image](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
 ![image](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
