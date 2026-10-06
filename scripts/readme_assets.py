@@ -142,14 +142,33 @@ STACK = [
 ]
 
 
-def badge(name, color, logo, logo_color, href):
+BADGE_RADIUS = 6
+
+
+def badge_slug(name):
+    s = name.lower().replace("#", "-sharp").replace("+", "-plus").replace(".", "dot")
+    return re.sub(r"[^a-z0-9]+", "-", s).strip("-")
+
+
+def badge_file(name, color, logo, logo_color):
+    """Fetch the shields.io for-the-badge SVG and round its corners (the style itself has none)."""
     label = urllib.parse.quote(name.replace("-", "--").replace("_", "__").replace(" ", "_"), safe="._")
     url = f"https://img.shields.io/badge/{label}-{color}?style=for-the-badge"
     if logo:
         url += "&logo=" + (logo if logo.startswith("data%3A") else urllib.parse.quote(logo, safe=""))
     if logo_color:
         url += f"&logoColor={logo_color}"
-    md = f"![{name}]({url})"
+    svg = fetch(url).decode()
+    svg, n = re.subn(r'<g shape-rendering="crispEdges"><rect ', f'<g><rect rx="{BADGE_RADIUS}" ', svg, count=1)
+    if not n:
+        raise SystemExit(f"Unexpected shields.io markup for {name!r}; can't round its corners")
+    rel = f"assets/badges/{badge_slug(name)}.svg"
+    write(rel, svg)
+    return rel
+
+
+def badge(name, color, logo, logo_color, href):
+    md = f"![{name}]({badge_file(name, color, logo, logo_color)})"
     return f"[{md}]({href})" if href else md
 
 # App groups, in README order. Each app: slug, name, type (card dot label), description,
@@ -496,8 +515,8 @@ def main():
         # Same markup as the pin cards: one image link per line, so they flow two per row and stack on phones.
         cards = "\n".join(f"[![{a[1]}](assets/apps/{a[0]}.svg)]({PLAY}{a[4]})" for a in apps)
         sections.append(f"### {title}\n\n{tags} {blurb}\n\n{cards}")
-    # Badges in a group share one paragraph, so they wrap left-aligned like the original flat list.
-    stack = "\n\n".join(f"**{group}**<br>\n" + "\n".join(badge(*b) for b in badges) for group, badges in STACK)
+    # Groups only set the order; the badges render as one left-aligned paragraph with no labels.
+    stack = "\n".join(badge(*b) for _, badges in STACK for b in badges)
     with open(README, encoding="utf-8") as f:
         readme = replace_block(replace_block(f.read(), "apps", "\n\n".join(sections)), "stack", stack)
     with open(README, "w", encoding="utf-8", newline="\n") as f:
