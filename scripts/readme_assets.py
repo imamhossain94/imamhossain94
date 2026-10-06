@@ -176,59 +176,59 @@ def badge(name, color, logo, logo_color, href):
 GROUPS = [
     ("Downloaders", "Save videos, reels, stories and photos from your favorite social apps.", [
         ("media-saver", "Media Saver: Video Download", "All-in-one",
-         "Download & save HD videos, photos, reels & stories from all your favorite apps.",
+         "Save HD videos, photos, reels & stories from any app.",
          "com.newagedevs.mediasaver", False,
          "MUa7YdaOv5dIL3_kscgk5wNVdIHo7xgOmcxewWzGJORe9vd6PgvdaGlnP59prv94NV9vUmolRhIi4uZFtBWLKg"),
         ("facebook-video-downloader", "Fb Video Downloader", "Facebook",
-         "Download images, videos, reels & stories from Facebook easily.",
+         "Download Facebook videos, reels, stories & images.",
          "com.newagedevs.facebook_video_downloader", False,
          "MLZj1OlPaq58-Bpv4CgeFvxSqCwiV03erzrn77MTrURu_17C3IREq7FPx86MIAiAMTQ9EzXWh9hVcnyUY7p_eZs"),
         ("insaver", "InSaver: Reels Downloader", "Instagram",
-         "Download Reels, Stories, Threads & videos in HD. No watermark, no login.",
+         "Download Reels, Stories & videos in HD. No login.",
          "com.newagedevs.reels_video_downloader", False,
          "kdQ49cjLFNSu5fEN0z37KB6Vc3CTmvMBqmvW6xmy0gw3zt7AcoFWfV_ADDTKCKx-G2oKkoA-pa4hpY2UroGW"),
         ("threads-video-downloader", "Threads Video Downloader", "Threads",
-         "Save Threads videos, photos & GIFs in one tap — fast, simple, no login.",
+         "Save Threads videos, photos & GIFs in one tap.",
          "com.newagedevs.threads_video_downloader", False,
          "3hcagmNXQbYhssbBBCBzMbKYoE895e_xcyoRA-DHifx1WHsd3eB6CAyVPHGtS4Ec7CkbVjablPTZNV29Lz9z16g"),
         ("hd-video-downloader", "Hd Video Downloader", "Facebook",
-         "Save Facebook videos, Reels & Stories in HD and 4K. Fast & easy.",
+         "Save Facebook videos, Reels & Stories in HD and 4K.",
          "com.newagedevs.story_video_downloader", False,
          "46MRAnyGDr2E8D0KgSVAFwU5-Q6OmBrw8NZNZo0sBIqiILG8qLDLE0G3SIYtSq9DKtlf6NqBEd4KGB4NyxybHns"),
     ]),
     ("Tools", "Everyday utilities for audio, your phone, network, links, privacy and travel.", [
         ("sonary", "Sonary: MP3 & Noise Remover AI", "AI Audio",
-         "Extract, convert, trim and merge audio. Remove vocals and noise with AI.",
+         "Convert, trim & merge audio. Remove vocals & noise with AI.",
          "com.newagedevs.sonary", True,
          "vdnVcvDwadlcJWssb0ru-UBiM0vjZWCmD0AJ08WuidTfhU89rJVTd0VnKrTb1r7-QB5ovLd5p0puUK4DIIpicg"),
         ("gesture-volume", "Gesture Volume: Edge Bar", "Accessibility",
-         "Volume, brightness and a deck of tools, from one bar on your screen edge.",
+         "Volume, brightness and quick tools from a screen-edge bar.",
          "com.newagedevs.gesturevolume", False,
          "4zmNR3loFQwTrgJ2ClMGP5ZjXV_0Tg-QfjbIwGxbkwxFGHrmSICBkEyyEj9G1JlcCyFudv5L0ZmHZgEeKV2yExw"),
         ("force-5g-lte", "Force 5G/LTE & Network Monitor", "Network",
-         "Switch network mode: 5G only (NR), 4G LTE only, 3G or 2G — and monitor it.",
+         "Lock 5G, 4G LTE, 3G or 2G and monitor your network.",
          "com.newagedevs.enable_network", False,
          "ymabFLg5tZTuyb0b6qp1LIgMvg9iS0O26L0gF9Xyq_CbrXJW7E1juLczONff9rGbdHo25Dmn6JSWJ0r0N35B"),
         ("temp-mail", "Temp Mail - Disposable Email", "Privacy",
-         "Instant disposable email. No signup. Block spam & bots. Stay private.",
+         "Instant disposable email. No signup, no spam.",
          "com.newagedevs.temp_mail", False,
          "mLpd6Y_65gUCpnyK4j8YBJeT2tSc7Ix7F3GAv2Ohze-vYMERkZgQBhjiMeERAp5VVsHbvO2jZVKSHCyeaaEA"),
         ("shortly", "Shortly: URL & Link Shortener", "Links & QR",
-         "Shorten and expand URLs, create QR codes, and check links safely.",
+         "Shorten and expand URLs, make QR codes, check links.",
          "com.newagedevs.url_shortener", False,
          "0dxWtNlPIGpfi0ibqJiYGZEkjNnBFuk85PbmFdM5UR4wwRgVNFiBAr6ofbZIAv6jNEnaR3Xae8H2krC-ZbkxaQ"),
         ("smart-route-bd", "Smart Route BD: Bus & Metro", "Travel",
-         "Unofficial Dhaka transit guide: bus, metro, train & launch fares — offline.",
+         "Offline Dhaka transit guide: bus, metro, train & launch.",
          "com.newage.bdbusroute", False,
          "I-p81AkneFZAdrVnVfefJgV4iPlJBr0EANG273NV5PEtMY1WV0XuVCgv69nwMVcyAjqvst00J78P-xFYsySXfA"),
     ]),
     ("Widgets & Games", "Home-screen widgets and casual games.", [
         ("couple-widgets", "Couple Widgets: Days Together", "Widget",
-         "Count your days together with beautiful widgets you design yourselves.",
+         "Count your days together with widgets you design.",
          "com.newagedevs.couplewidgets", False,
          "crxsJ7z2UvBDOdLLR0P8y76HEy4JF3xzzqur8YHxlvbc0VRmoD-Ujw81ecbDLgbW7WfhGyjUzqGhpfxK7oQC8w"),
         ("arrow-rush", "Arrow Rush: Untangle Puzzle", "Puzzle game",
-         "Untangle a knot of arrows. Every tap counts. Hundreds of handcrafted levels.",
+         "Untangle a knot of arrows across hundreds of levels.",
          "com.newagedevs.arrow_rush", True,
          "H9iTy3lTyoGcul_nTmz3NYceg8id7bNL1JXZzUbSkfzugPpUFd_xrsVIpg5nEwep4GoUKqJ1W2UvcIYd_f6H5WA"),
     ]),
@@ -236,7 +236,7 @@ GROUPS = [
 APPS = [app for _, _, apps in GROUPS for app in apps]
 
 # Pin-card look, github-stats-extended `theme=dark`.
-PIN = dict(bg="#151515", border="#e4e2e2", title="#fff", text="#9f9f9f", icon="#79ff97",
+PIN = dict(bg="#151515", border="#3d3e3e", title="#fff", text="#9f9f9f", icon="#79ff97",
            font="'Segoe UI', Ubuntu, Sans-Serif")
 
 HERO_COVERS = [  # front -> back, store artwork from newagedevs.com
@@ -370,31 +370,27 @@ PHONE = ('<rect x="3.75" y="0.75" width="8.5" height="14.5" rx="1.75" fill="none
 
 
 def app_card(app, icon_uri, accent):
+    """Compact card on GitHub's native pinned-repo layout: title row, one-line description, meta row."""
     _slug, name, kind, desc, _pkg, ios, _key = app
-    W, H = 400, 140
-    title_x = 56
-    size = 18
-    while width(name, size, 600) > W - title_x - 25 and size > 15:
-        size -= 0.5
-    lines = wrap(desc, 13, W - 50)
-    if len(lines) > 2:
-        raise SystemExit(f"Description for {name!r} needs 3 lines; shorten it: {desc!r}")
+    W, H, pad = 400, 96, 16
+    title_x = pad + 20 + 8
+    if width(desc, 12) > W - 2 * pad:
+        raise SystemExit(f"Description for {name!r} doesn't fit on one line; shorten it: {desc!r}")
 
-    b = [f'<rect x="0.5" y="0.5" rx="4.5" width="{W - 1}" height="{H - 1}" fill="{PIN["bg"]}" stroke="{PIN["border"]}"/>',
-         '<clipPath id="icon"><rect x="25" y="17.5" width="22" height="22" rx="5"/></clipPath>',
-         f'<image x="25" y="17.5" width="22" height="22" clip-path="url(#icon)" href="{icon_uri}"/>',
-         '<rect x="25.5" y="18" width="21" height="21" rx="4.5" stroke="#fff" stroke-opacity="0.18"/>',
-         text(title_x, 35, name, size, PIN["title"], 600, fit=W - title_x - 25)]
-    for i, line in enumerate(lines):
-        b.append(text(25, 65.6 + i * 15.6, line, 13, PIN["text"]))
+    b = [f'<rect x="0.5" y="0.5" rx="6" width="{W - 1}" height="{H - 1}" fill="{PIN["bg"]}" stroke="{PIN["border"]}"/>',
+         f'<clipPath id="icon"><rect x="{pad}" y="14" width="20" height="20" rx="5"/></clipPath>',
+         f'<image x="{pad}" y="14" width="20" height="20" clip-path="url(#icon)" href="{icon_uri}"/>',
+         f'<rect x="{pad + 0.5}" y="14.5" width="19" height="19" rx="4.5" stroke="#fff" stroke-opacity="0.18"/>',
+         text(title_x, 29, name, 14, PIN["title"], 600, fit=W - title_x - pad),
+         text(pad, 55, desc, 12, PIN["text"])]
 
-    # Footer row, laid out like the pin card's language / stars / forks.
-    b.append(f'<circle cx="30" cy="115" r="6" fill="{accent}"/>')
-    b.append(text(45, 120, kind, 12, PIN["text"]))
-    x = 30 + 15 + width(kind, 12) + 25
+    # Meta row, like the pinned repo's language dot and star / fork counts.
+    b.append(f'<circle cx="{pad + 5}" cy="74" r="5" fill="{accent}"/>')
+    b.append(text(pad + 16, 78, kind, 12, PIN["text"]))
+    x = pad + 16 + width(kind, 12) + 16
     platforms = "Android · iOS" if ios else "Android"
-    b.append(f'<g transform="translate({x:.1f} 108)">{PHONE.format(c=PIN["icon"])}</g>')
-    b.append(text(x + 20, 120, platforms, 12, PIN["text"]))
+    b.append(f'<g transform="translate({x:.1f} 66.5) scale(0.875)">{PHONE.format(c=PIN["icon"])}</g>')
+    b.append(text(x + 18, 78, platforms, 12, PIN["text"]))
 
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" fill="none" '
             f'role="img" font-family="{PIN["font"]}">\n<title>{esc(name)}</title>\n<desc>{esc(desc)}</desc>\n'
