@@ -91,11 +91,8 @@
 
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=imamhossain94)
 
-![Imam's github stats](https://github-stats-extended.vercel.app/api?username=imamhossain94&count_private=true&show_icons=true&theme=dark)
-![Top Langs](https://github-stats-extended.vercel.app/api/top-langs/?username=imamhossain94&langs_count=3&theme=dark)
-
-[![Readme Card](https://github-stats-extended.vercel.app/api/pin/?username=imamhossain94&repo=study-lab&theme=dark)](https://github.com/imamhossain94/study-lab)
-[![Readme Card](https://github-stats-extended.vercel.app/api/pin/?username=imamhossain94&repo=bubt-website-scraping-script&theme=dark)](https://github.com/imamhossain94/bubt-website-scraping-script)
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api?username=imamhossain94&count_private=true&show_icons=true&theme=dark&border_color=3d3e3e"><img alt="Imam's GitHub stats" src="https://github-stats-extended.vercel.app/api?username=imamhossain94&count_private=true&show_icons=true&bg_color=ffffff&border_color=d1d9e0&title_color=1f2328&text_color=59636e&icon_color=1a7f37&ring_color=1a7f37"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/top-langs/?username=imamhossain94&langs_count=3&theme=dark&border_color=3d3e3e"><img alt="Top languages" src="https://github-stats-extended.vercel.app/api/top-langs/?username=imamhossain94&langs_count=3&bg_color=ffffff&border_color=d1d9e0&title_color=1f2328&text_color=59636e"></picture>
 
 **Note:** This chart only shows which languages appear in public code on GitHub. It does not reflect experience or skill level.
 
@@ -111,29 +108,29 @@ Apps I've built and published under [NewAgeDevs](https://newagedevs.com), availa
 
 `5 apps` `Android` Save videos, reels, stories and photos from your favorite social apps.
 
-[![Media Saver: Video Download](assets/apps/media-saver.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.mediasaver)
-[![Fb Video Downloader](assets/apps/facebook-video-downloader.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.facebook_video_downloader)
-[![InSaver: Reels Downloader](assets/apps/insaver.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.reels_video_downloader)
-[![Threads Video Downloader](assets/apps/threads-video-downloader.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.threads_video_downloader)
-[![Hd Video Downloader](assets/apps/hd-video-downloader.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.story_video_downloader)
+[![Media Saver: Video Download](assets/apps/media-saver-light.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.mediasaver#gh-light-mode-only)[![Media Saver: Video Download](assets/apps/media-saver-dark.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.mediasaver#gh-dark-mode-only)
+[![Fb Video Downloader](assets/apps/facebook-video-downloader-light.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.facebook_video_downloader#gh-light-mode-only)[![Fb Video Downloader](assets/apps/facebook-video-downloader-dark.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.facebook_video_downloader#gh-dark-mode-only)
+[![InSaver: Reels Downloader](assets/apps/insaver-light.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.reels_video_downloader#gh-light-mode-only)[![InSaver: Reels Downloader](assets/apps/insaver-dark.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.reels_video_downloader#gh-dark-mode-only)
+[![Threads Video Downloader](assets/apps/threads-video-downloader-light.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.threads_video_downloader#gh-light-mode-only)[![Threads Video Downloader](assets/apps/threads-video-downloader-dark.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.threads_video_downloader#gh-dark-mode-only)
+[![Hd Video Downloader](assets/apps/hd-video-downloader-light.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.story_video_downloader#gh-light-mode-only)[![Hd Video Downloader](assets/apps/hd-video-downloader-dark.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.story_video_downloader#gh-dark-mode-only)
 
 ### Tools
 
 `6 apps` `Android` `iOS` Everyday utilities for audio, your phone, network, links, privacy and travel.
 
-[![Sonary: MP3 & Noise Remover AI](assets/apps/sonary.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.sonary)
-[![Gesture Volume: Edge Bar](assets/apps/gesture-volume.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.gesturevolume)
-[![Force 5G/LTE & Network Monitor](assets/apps/force-5g-lte.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.enable_network)
-[![Temp Mail - Disposable Email](assets/apps/temp-mail.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.temp_mail)
-[![Shortly: URL & Link Shortener](assets/apps/shortly.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.url_shortener)
-[![Smart Route BD: Bus & Metro](assets/apps/smart-route-bd.svg)](https://play.google.com/store/apps/details?id=com.newage.bdbusroute)
+[![Sonary: MP3 & Noise Remover AI](assets/apps/sonary-light.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.sonary#gh-light-mode-only)[![Sonary: MP3 & Noise Remover AI](assets/apps/sonary-dark.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.sonary#gh-dark-mode-only)
+[![Gesture Volume: Edge Bar](assets/apps/gesture-volume-light.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.gesturevolume#gh-light-mode-only)[![Gesture Volume: Edge Bar](assets/apps/gesture-volume-dark.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.gesturevolume#gh-dark-mode-only)
+[![Force 5G/LTE & Network Monitor](assets/apps/force-5g-lte-light.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.enable_network#gh-light-mode-only)[![Force 5G/LTE & Network Monitor](assets/apps/force-5g-lte-dark.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.enable_network#gh-dark-mode-only)
+[![Temp Mail - Disposable Email](assets/apps/temp-mail-light.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.temp_mail#gh-light-mode-only)[![Temp Mail - Disposable Email](assets/apps/temp-mail-dark.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.temp_mail#gh-dark-mode-only)
+[![Shortly: URL & Link Shortener](assets/apps/shortly-light.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.url_shortener#gh-light-mode-only)[![Shortly: URL & Link Shortener](assets/apps/shortly-dark.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.url_shortener#gh-dark-mode-only)
+[![Smart Route BD: Bus & Metro](assets/apps/smart-route-bd-light.svg)](https://play.google.com/store/apps/details?id=com.newage.bdbusroute#gh-light-mode-only)[![Smart Route BD: Bus & Metro](assets/apps/smart-route-bd-dark.svg)](https://play.google.com/store/apps/details?id=com.newage.bdbusroute#gh-dark-mode-only)
 
 ### Widgets & Games
 
 `2 apps` `Android` `iOS` Home-screen widgets and casual games.
 
-[![Couple Widgets: Days Together](assets/apps/couple-widgets.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.couplewidgets)
-[![Arrow Rush: Untangle Puzzle](assets/apps/arrow-rush.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.arrow_rush)
+[![Couple Widgets: Days Together](assets/apps/couple-widgets-light.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.couplewidgets#gh-light-mode-only)[![Couple Widgets: Days Together](assets/apps/couple-widgets-dark.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.couplewidgets#gh-dark-mode-only)
+[![Arrow Rush: Untangle Puzzle](assets/apps/arrow-rush-light.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.arrow_rush#gh-light-mode-only)[![Arrow Rush: Untangle Puzzle](assets/apps/arrow-rush-dark.svg)](https://play.google.com/store/apps/details?id=com.newagedevs.arrow_rush#gh-dark-mode-only)
 <!-- apps:end -->
 
 **Note:** This list only covers apps published on Google Play and the App Store. Client, private and ongoing projects aren't listed, so it doesn't reflect everything I've built.

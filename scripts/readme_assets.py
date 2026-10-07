@@ -235,9 +235,15 @@ GROUPS = [
 ]
 APPS = [app for _, _, apps in GROUPS for app in apps]
 
-# Pin-card look, github-stats-extended `theme=dark`.
-PIN = dict(bg="#151515", border="#3d3e3e", title="#fff", text="#9f9f9f", icon="#79ff97",
-           font="'Segoe UI', Ubuntu, Sans-Serif")
+# App card colours per GitHub theme. Keep in sync with the GitHub Stats card URLs in README.md:
+# dark = github-stats-extended `theme=dark` with border 3d3e3e, light = GitHub's Primer light palette.
+CARD_THEMES = {
+    "light": dict(bg="#ffffff", border="#d1d9e0", title="#1f2328", text="#59636e", icon="#1a7f37",
+                  ring="#1f2328", dot_l=(0.42, 0.55), dot_none="#8c959f"),
+    "dark": dict(bg="#151515", border="#3d3e3e", title="#fff", text="#9f9f9f", icon="#79ff97",
+                 ring="#ffffff", dot_l=(0.55, 0.7), dot_none="#9f9f9f"),
+}
+CARD_FONT = "'Segoe UI', Ubuntu, Sans-Serif"
 
 HERO_COVERS = [  # front -> back, store artwork from newagedevs.com
     ("facebook-video-downloader", -5.0),
@@ -343,7 +349,7 @@ def data_uri(img, fmt="PNG", **kw):
 
 
 def accent_of(img):
-    """Dominant saturated colour of an icon, brightened to read as a dot on the dark card."""
+    """Dominant saturated colour of an icon as (h, l, s), or None for a monochrome icon."""
     buckets = {}
     px = img.convert("RGBA").resize((48, 48)).load()
     for r, g, b, a in (px[x, y] for x in range(48) for y in range(48)):
@@ -351,10 +357,19 @@ def accent_of(img):
         if a > 200 and s > 0.35 and v > 0.35:
             buckets.setdefault(round(h * 24) % 24, []).append((r, g, b))
     if not buckets:
-        return "#9f9f9f"
+        return None
     pixels = max(buckets.values(), key=len)
-    h, l, s = colorsys.rgb_to_hls(*(sum(c[i] for c in pixels) / len(pixels) / 255 for i in range(3)))
-    return hexc([v * 255 for v in colorsys.hls_to_rgb(h, min(max(l, 0.55), 0.7), max(s, 0.6))])
+    return colorsys.rgb_to_hls(*(sum(c[i] for c in pixels) / len(pixels) / 255 for i in range(3)))
+
+
+def dot_colour(accent, theme):
+    """Icon accent pulled into a lightness band that reads well as a dot on the theme's card."""
+    t = CARD_THEMES[theme]
+    if accent is None:
+        return t["dot_none"]
+    h, l, s = accent
+    lo, hi = t["dot_l"]
+    return hexc([v * 255 for v in colorsys.hls_to_rgb(h, min(max(l, lo), hi), max(s, 0.6))])
 
 
 def write(rel, content):
@@ -369,31 +384,32 @@ PHONE = ('<rect x="3.75" y="0.75" width="8.5" height="14.5" rx="1.75" fill="none
          '<circle cx="8" cy="12.25" r="1" fill="{c}"/>')
 
 
-def app_card(app, icon_uri, accent):
+def app_card(app, icon_uri, accent, theme):
     """Compact card on GitHub's native pinned-repo layout: title row, one-line description, meta row."""
     _slug, name, kind, desc, _pkg, ios, _key = app
+    t = CARD_THEMES[theme]
     W, H, pad = 400, 96, 16
     title_x = pad + 20 + 8
     if width(desc, 12) > W - 2 * pad:
         raise SystemExit(f"Description for {name!r} doesn't fit on one line; shorten it: {desc!r}")
 
-    b = [f'<rect x="0.5" y="0.5" rx="6" width="{W - 1}" height="{H - 1}" fill="{PIN["bg"]}" stroke="{PIN["border"]}"/>',
+    b = [f'<rect x="0.5" y="0.5" rx="6" width="{W - 1}" height="{H - 1}" fill="{t["bg"]}" stroke="{t["border"]}"/>',
          f'<clipPath id="icon"><rect x="{pad}" y="14" width="20" height="20" rx="5"/></clipPath>',
          f'<image x="{pad}" y="14" width="20" height="20" clip-path="url(#icon)" href="{icon_uri}"/>',
-         f'<rect x="{pad + 0.5}" y="14.5" width="19" height="19" rx="4.5" stroke="#fff" stroke-opacity="0.18"/>',
-         text(title_x, 29, name, 14, PIN["title"], 600, fit=W - title_x - pad),
-         text(pad, 55, desc, 12, PIN["text"])]
+         f'<rect x="{pad + 0.5}" y="14.5" width="19" height="19" rx="4.5" stroke="{t["ring"]}" stroke-opacity="0.15"/>',
+         text(title_x, 29, name, 14, t["title"], 600, fit=W - title_x - pad),
+         text(pad, 55, desc, 12, t["text"])]
 
     # Meta row, like the pinned repo's language dot and star / fork counts.
-    b.append(f'<circle cx="{pad + 5}" cy="74" r="5" fill="{accent}"/>')
-    b.append(text(pad + 16, 78, kind, 12, PIN["text"]))
+    b.append(f'<circle cx="{pad + 5}" cy="74" r="5" fill="{dot_colour(accent, theme)}"/>')
+    b.append(text(pad + 16, 78, kind, 12, t["text"]))
     x = pad + 16 + width(kind, 12) + 16
     platforms = "Android · iOS" if ios else "Android"
-    b.append(f'<g transform="translate({x:.1f} 66.5) scale(0.875)">{PHONE.format(c=PIN["icon"])}</g>')
-    b.append(text(x + 18, 78, platforms, 12, PIN["text"]))
+    b.append(f'<g transform="translate({x:.1f} 66.5) scale(0.875)">{PHONE.format(c=t["icon"])}</g>')
+    b.append(text(x + 18, 78, platforms, 12, t["text"]))
 
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" fill="none" '
-            f'role="img" font-family="{PIN["font"]}">\n<title>{esc(name)}</title>\n<desc>{esc(desc)}</desc>\n'
+            f'role="img" font-family="{CARD_FONT}">\n<title>{esc(name)}</title>\n<desc>{esc(desc)}</desc>\n'
             + "\n".join(b) + "\n</svg>\n")
 
 
@@ -502,14 +518,22 @@ def main():
 
     for app in APPS:
         img = Image.open(io.BytesIO(fetch(f"https://play-lh.googleusercontent.com/{app[6]}=s128"))).convert("RGBA")
-        write(f"assets/apps/{app[0]}.svg", app_card(app, data_uri(img.resize((66, 66), Image.LANCZOS)), accent_of(img)))
+        icon_uri, accent = data_uri(img.resize((66, 66), Image.LANCZOS)), accent_of(img)
+        for theme in CARD_THEMES:
+            write(f"assets/apps/{app[0]}-{theme}.svg", app_card(app, icon_uri, accent, theme))
+
+    def card_md(a):
+        # GitHub breaks <a><picture>…</picture></a> (it re-links the inner <img>), so each card is two links and
+        # GitHub's CSS hides the one whose href ends in the other theme's #gh-*-mode-only fragment.
+        return "".join(f"[![{a[1]}](assets/apps/{a[0]}-{theme}.svg)]({PLAY}{a[4]}#gh-{theme}-mode-only)"
+                       for theme in CARD_THEMES)
 
     sections = []
     for title, blurb, apps in GROUPS:
         platforms = ["Android"] + (["iOS"] if any(a[5] for a in apps) else [])
         tags = " ".join(f"`{tag}`" for tag in [f"{len(apps)} apps"] + platforms)
-        # Same markup as the pin cards: one image link per line, so they flow two per row and stack on phones.
-        cards = "\n".join(f"[![{a[1]}](assets/apps/{a[0]}.svg)]({PLAY}{a[4]})" for a in apps)
+        # One card per line in a single paragraph, so they flow two per row and stack on phones.
+        cards = "\n".join(card_md(a) for a in apps)
         sections.append(f"### {title}\n\n{tags} {blurb}\n\n{cards}")
     # Groups only set the order; the badges render as one left-aligned paragraph with no labels.
     stack = "\n".join(badge(*b) for _, badges in STACK for b in badges)
